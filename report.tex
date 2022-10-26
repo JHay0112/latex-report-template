@@ -21,6 +21,7 @@
 \addbibresource{report.bib}
 
 \begin{document}
+\pagenumbering{roman}
 
 \maketitle
 
@@ -28,8 +29,9 @@
 \tableofcontents
 
 \pagebreak
+\pagenumbering{arabic}
 \section*{Introduction}
-
+\addcontentsline{toc}{section}{Introduction}
 
 \pagebreak
 \section{Context}
@@ -51,9 +53,14 @@
 
 \pagebreak
 \section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
 
 
 \pagebreak
+\pagenumbering{Roman}
 \printbibliography
+
+\pagebreak
+\appendix
 
 \end{document}
