@@ -1,0 +1,10 @@
+# Latex/Latex Workshop
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.gz
+*.toc
+*.pdf
+*.synctex*
