@@ -6,15 +6,19 @@
 \usepackage{appendix}
 \usepackage{hyperref}
 \usepackage{parskip}
+\usepackage[style=ieee]{biblatex}
 \usepackage[a4paper, margin=1in]{geometry}
 
 \title{Project Report Template}
-\author{Jordan Hay}
+\author{Jordan Hay \cite{hay22}}
 \date{October 2022}
 
 % EMTH211 vector and matrix notation
 \renewcommand{\vec}[1]{\underline{#1}}
 \newcommand{\mat}[1]{\boldsymbol{#1}}
+
+% References
+\addbibresource{report.bib}
 
 \begin{document}
 
@@ -50,7 +54,6 @@
 
 
 \pagebreak
-
-
+\printbibliography
 
 \end{document}

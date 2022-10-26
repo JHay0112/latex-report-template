@@ -8,3 +8,9 @@
 *.toc
 *.pdf
 *.synctex*
+
+# Bibtex
+*.bbl
+*.bcf
+*.blg
+*.run.xml
