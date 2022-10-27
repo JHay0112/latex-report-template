@@ -16,11 +16,14 @@
 % EMTH211 vector and matrix notation
 \renewcommand{\vec}[1]{\underline{#1}}
 \newcommand{\mat}[1]{\boldsymbol{#1}}
+\newcommand{\innerprod}[2]{\left\langle #1, #2 \right\rangle}
+\newcommand{\dotprod}[2]{#1 \cdot #2}
 
 % ENCE260 logical notation
 \renewcommand{\lnot}[1]{\overline{#1}}
 \renewcommand{\land}{\cdot}
 \renewcommand{\lor}{+}
+\newcommand{\lxor}{\oplus}
 
 % References
 \addbibresource{report.bib}
@@ -65,6 +68,7 @@
 \pagebreak
 \pagenumbering{Roman}
 \printbibliography
+\addcontentsline{toc}{section}{References}
 
 \pagebreak
 \appendix
