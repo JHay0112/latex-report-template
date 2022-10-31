@@ -8,6 +8,8 @@
 \usepackage{parskip}
 \usepackage[style=ieee]{biblatex}
 \usepackage[a4paper, margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{titling}
 
 \title{Project Report Template}
 \author{Jordan Hay \cite{hay22}}
@@ -25,19 +27,30 @@
 \renewcommand{\lor}{+}
 \newcommand{\lxor}{\oplus}
 
+% Page headers and footers
+\renewcommand{\headrule}{}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[L]{\thetitle}
+\fancyfoot[R]{\thepage}
+\pagestyle{fancy}
+
 % References
 \addbibresource{report.bib}
 
 \begin{document}
-\pagenumbering{roman}
 
 \maketitle
+\thispagestyle{empty}
 
 \pagebreak
+\pagenumbering{roman}
+
 \tableofcontents
 
 \pagebreak
 \pagenumbering{arabic}
+\fancyfoot[R]{\thepage/\pageref{page:final}}
 \section*{Introduction}
 \addcontentsline{toc}{section}{Introduction}
 
@@ -62,11 +75,13 @@
 
 \pagebreak
 \section*{Conclusion}
+\label{page:final}
 \addcontentsline{toc}{section}{Conclusion}
 
 
 \pagebreak
 \pagenumbering{Roman}
+\fancyfoot[R]{\thepage}
 \printbibliography
 \addcontentsline{toc}{section}{References}
 
